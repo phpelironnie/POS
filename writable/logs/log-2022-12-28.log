@@ -1,0 +1,296 @@
+ERROR - 2022-12-28 15:48:29 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'base' in C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'base', 3306, '', 0)
+#1 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\DP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DP\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DP\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\DP\app\Controllers\Usuarios.php(242): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\DP\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#8 C:\xampp\htdocs\DP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\xampp\htdocs\DP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'base' in C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\DP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\DP\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\DP\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\DP\app\Controllers\Usuarios.php(242): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\DP\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#7 C:\xampp\htdocs\DP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp\htdocs\DP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\DP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-28 15:48:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'base'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Usuarios.php(242): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-28 15:49:51 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'base' in C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'base', 3306, '', 0)
+#1 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\DP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\DP\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\DP\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\DP\app\Controllers\Usuarios.php(242): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\DP\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#8 C:\xampp\htdocs\DP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\xampp\htdocs\DP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\DP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'base' in C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\DP\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\DP\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\DP\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\DP\app\Controllers\Usuarios.php(242): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\DP\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#7 C:\xampp\htdocs\DP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 C:\xampp\htdocs\DP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\DP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-28 15:49:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'base'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Usuarios.php(242): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 15:54:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\editar.php on line 21.
+ 1 APPPATH\Views\usuarios\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(177): view('usuarios/editar', [...])
+ 6 APPPATH\Controllers\Usuarios.php(200): App\Controllers\Usuarios->editar(null, Object(CodeIgniter\Validation\Validation))
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->actualizar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 15:54:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\editar.php on line 21.
+ 1 APPPATH\Views\usuarios\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(177): view('usuarios/editar', [...])
+ 6 APPPATH\Controllers\Usuarios.php(200): App\Controllers\Usuarios->editar(null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->actualizar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 16:11:23 --> getimagesize(http://localhost/DP/public/images/LUFFYOP.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/DP/public/images/LUFFYOP.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/DP/public/images/LUFFYOP.jpg')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/DP/public/images/LUFFYOP.jpg')
+ 4 APPPATH\Controllers\Productos.php(265): FPDF->Image('http://localhost/DP/public/images/LUFFYOP.jpg', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaProductosPdf()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-28 20:10:41 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\DP\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\DP\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\DP\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\DP\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\DP\app\Models\VentasModel.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\DP\app\Controllers\Ventas.php(63): App\Models\VentasModel->insertaVenta('63acf707620d1', '0.00', NULL, NULL, '1', '001')
+#9 C:\xampp\htdocs\DP\system\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+#10 C:\xampp\htdocs\DP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp\htdocs\DP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\DP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-28 20:10:41 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acf707620d1\', \'0.00\', NULL, NULL, \'1\', \'001\', \'2022-12-28 20:10:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acf707620d1\', \'0.00\', NULL, NULL, \'1\', \'001\', \'2022-12-28 20:10:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acf707620d1\', \'0.00\', NULL, NULL, \'1\', \'001\', \'2022-12-28 20:10:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (:folio:, :total:, :id_usuario:, :id_caja:, :id_cliente:, :forma_pago:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(33): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(63): App\Models\VentasModel->insertaVenta('63acf707620d1', '0.00', null, null, '1', '001')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-28 20:11:39 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\DP\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\DP\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\DP\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\DP\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\DP\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\DP\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\DP\app\Models\VentasModel.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\DP\app\Controllers\Ventas.php(63): App\Models\VentasModel->insertaVenta('63acf7477df47', '4.00', NULL, NULL, '1', '001')
+#9 C:\xampp\htdocs\DP\system\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+#10 C:\xampp\htdocs\DP\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp\htdocs\DP\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\DP\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-28 20:11:39 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acf7477df47\', \'4.00\', NULL, NULL, \'1\', \'001\', \'2022-12-28 20:11:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acf7477df47\', \'4.00\', NULL, NULL, \'1\', \'001\', \'2022-12-28 20:11:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acf7477df47\', \'4.00\', NULL, NULL, \'1\', \'001\', \'2022-12-28 20:11:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (:folio:, :total:, :id_usuario:, :id_caja:, :id_cliente:, :forma_pago:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(33): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(63): App\Models\VentasModel->insertaVenta('63acf7477df47', '4.00', null, null, '1', '001')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 20:18:33 --> fopen(http://localhost/DP/public/images/FOTO1.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/DP/public/images/FOTO1.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1257)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1257): fopen('http://localhost/DP/public/images/FOTO1.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/DP/public/images/FOTO1.png')
+ 4 APPPATH\Controllers\Ventas.php(134): FPDF->Image('http://localhost/DP/public/images/FOTO1.png', 30, 20, 20, 20, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->generaTicket('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 20:20:09 --> fopen(http://localhost/DP/public/images/logotipo.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/DP/public/images/logotipo.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1257)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1257): fopen('http://localhost/DP/public/images/logotipo.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/DP/public/images/logotipo.png')
+ 4 APPPATH\Controllers\Ventas.php(134): FPDF->Image('http://localhost/DP/public/images/logotipo.png', 30, 20, 20, 20, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->generaTicket('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 20:21:38 --> fopen(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1257)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1257): fopen('http://localhost/DP/public/images/sistemas.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/DP/public/images/sistemas.png')
+ 4 APPPATH\Controllers\Ventas.php(134): FPDF->Image('http://localhost/DP/public/images/sistemas.png', 30, 20, 20, 20, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->generaTicket('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 20:22:54 --> fopen(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1257)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1257): fopen('http://localhost/DP/public/images/sistemas.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/DP/public/images/sistemas.png')
+ 4 APPPATH\Controllers\Ventas.php(134): FPDF->Image('http://localhost/DP/public/images/sistemas.png', 30, 20, 20, 20, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->generaTicket('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 22:42:27 --> getimagesize(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/DP/public/images/sistemas.png')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/DP/public/images/sistemas.png')
+ 4 APPPATH\Controllers\Compras.php(104): FPDF->Image('http://localhost/DP/public/images/sistemas.png', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 22:42:59 --> getimagesize(http://localhost/DP/public/images/LUFFYOP.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/DP/public/images/LUFFYOP.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/DP/public/images/LUFFYOP.jpg')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/DP/public/images/LUFFYOP.jpg')
+ 4 APPPATH\Controllers\Compras.php(104): FPDF->Image('http://localhost/DP/public/images/LUFFYOP.jpg', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 22:45:07 --> fopen(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1257.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/DP/public/images/sistemas.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1257)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1257): fopen('http://localhost/DP/public/images/sistemas.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/DP/public/images/sistemas.png')
+ 4 APPPATH\Controllers\Compras.php(104): FPDF->Image('http://localhost/DP/public/images/sistemas.png', 180, 10, 25, 25, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 22:45:40 --> getimagesize(http://localhost/DP/public/images/sistemas.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/DP/public/images/sistemas.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/DP/public/images/sistemas.jpg')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/DP/public/images/sistemas.jpg')
+ 4 APPPATH\Controllers\Compras.php(104): FPDF->Image('http://localhost/DP/public/images/sistemas.jpg', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 23:36:44 --> unlink(images/logo.png): Resource temporarily unavailable
+in APPPATH\Controllers\Configuracion.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(images/logo.png): Resource temporarily unavailable', 'APPPATH\\Controllers\\Configuracion.php', 109)
+ 2 APPPATH\Controllers\Configuracion.php(109): unlink('FCPATH\\images\\logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 23:37:26 --> unlink(images/logo.png): Resource temporarily unavailable
+in APPPATH\Controllers\Configuracion.php on line 109.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(images/logo.png): Resource temporarily unavailable', 'APPPATH\\Controllers\\Configuracion.php', 109)
+ 2 APPPATH\Controllers\Configuracion.php(109): unlink('FCPATH\\images\\logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

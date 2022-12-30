@@ -1,0 +1,59 @@
+CRITICAL - 2022-12-15 13:33:17 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Unidades.php on line 61.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('unidades')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('unidades')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('unidades')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-15 17:08:42 --> Invalid file: productos/productos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('productos/productos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/productos', [], true)
+ 3 APPPATH\Controllers\Productos.php(22): view('productos/productos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-15 22:21:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in C:\xampp\htdocs\POS_LJD\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\POS_LJD\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 C:\xampp\htdocs\POS_LJD\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\POS_LJD\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\POS_LJD\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\POS_LJD\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\POS_LJD\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\POS_LJD\app\Controllers\Unidades.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\POS_LJD\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#8 C:\xampp\htdocs\POS_LJD\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#9 C:\xampp\htdocs\POS_LJD\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\POS_LJD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in C:\xampp\htdocs\POS_LJD\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\POS_LJD\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\POS_LJD\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\POS_LJD\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\POS_LJD\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\POS_LJD\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\POS_LJD\app\Controllers\Unidades.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\POS_LJD\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#7 C:\xampp\htdocs\POS_LJD\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#8 C:\xampp\htdocs\POS_LJD\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\POS_LJD\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-15 22:21:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `unidades`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Unidades.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

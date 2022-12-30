@@ -1,0 +1,105 @@
+CRITICAL - 2022-12-10 18:29:47 --> Class "App\Controllers\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 19:00:54 --> Class "App\Controllers\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 19:05:09 --> Class "App\Controllers\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 19:24:02 --> Class "App\Controllers\UnidadesModel" not found
+in APPPATH\Controllers\Unidades.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Unidades->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 20:07:04 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 20:07:13 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 20:20:50 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:01:09 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 42.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:01:28 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:09:45 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 45.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:14:09 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 49.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:16:08 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 49.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 21:16:53 --> Unclosed '{' on line 27
+in APPPATH\Views\unidades\unidades.php on line 49.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('unidades/unidades', [], true)
+ 3 APPPATH\Controllers\Unidades.php(22): view('unidades/unidades', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

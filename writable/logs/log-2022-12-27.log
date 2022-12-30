@@ -1,0 +1,94 @@
+CRITICAL - 2022-12-27 00:19:04 --> Class "App\Models\DetalleCompraModel" not found
+in APPPATH\Controllers\Compras.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Compras->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 00:19:11 --> Class "App\Models\DetalleCompraModel" not found
+in APPPATH\Controllers\Compras.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Compras->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 00:19:57 --> Class "App\Models\DetalleCompraModel" not found
+in APPPATH\Controllers\Compras.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Compras->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 00:43:09 --> Class "FPDF" not found
+in APPPATH\Controllers\Compras.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 00:44:04 --> Undefined variable $pdf
+in APPPATH\Controllers\Compras.php on line 101.
+ 1 APPPATH\Controllers\Compras.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pdf', 'APPPATH\\Controllers\\Compras.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 10:34:57 --> syntax error, unexpected token "*", expecting "function" or "const"
+in APPPATH\Controllers\Compras.php on line 164.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('compras/nuevo')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('compras/nuevo')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('compras/nuevo')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 10:35:35 --> Invalid file: productos/ver_productos_pdf.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('productos/ver_productos_pdf.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/ver_productos_pdf', [], true)
+ 3 APPPATH\Controllers\Productos.php(243): view('productos/ver_productos_pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->muestraProductosPdf()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 10:36:12 --> getimagesize(http://localhost/Git3_/public/images/lllll.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/Git3_/public/images/lllll.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/Git3_/public/images/lllll.jpg')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/Git3_/public/images/lllll.jpg')
+ 4 APPPATH\Controllers\Compras.php(105): FPDF->Image('http://localhost/Git3_/public/images/lllll.jpg', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('5')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 10:38:44 --> getimagesize(http://localhost/Git3_/public/images/lllll.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/Git3_/public/images/lllll.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/Git3_/public/images/lllll.jpg')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/Git3_/public/images/lllll.jpg')
+ 4 APPPATH\Controllers\Compras.php(105): FPDF->Image('http://localhost/Git3_/public/images/lllll.jpg', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('5')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 10:41:11 --> getimagesize(http://localhost/Git3_/public/images/logotipo.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1238.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'getimagesize(http://localhost/Git3_/public/images/logotipo.jpg): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1238)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1238): getimagesize('http://localhost/Git3_/public/images/logotipo.jpg')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsejpg('http://localhost/Git3_/public/images/logotipo.jpg')
+ 4 APPPATH\Controllers\Compras.php(105): FPDF->Image('http://localhost/Git3_/public/images/logotipo.jpg', 180, 10, 25, 25, 'jpg')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('5')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-27 10:43:47 --> FPDF error: Not a PNG file: http://localhost/Git3_/public/images/logotipo.png
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 271.
+ 1 APPPATH\ThirdParty\fpdf\fpdf.php(1269): FPDF->Error('Not a PNG file: http://localhost/Git3_/public/images/logotipo.png')
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1260): FPDF->_parsepngstream(resource (stream), 'http://localhost/Git3_/public/images/logotipo.png')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/Git3_/public/images/logotipo.png')
+ 4 APPPATH\Controllers\Compras.php(105): FPDF->Image('http://localhost/Git3_/public/images/logotipo.png', 180, 10, 25, 25, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('5')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
